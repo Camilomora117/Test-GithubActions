@@ -11,7 +11,7 @@ app = FastAPI()
 app.title = "Mi aplicación"
 app.version = "0.0.1"
 Base.metadata.create_all(bind=engine)
-app.add_middleware(ErrorHandler)
+# app.add_middleware(ErrorHandler)
 app.include_router(user_router)
 app.include_router(company_router)
 app.include_router(rig_router)
